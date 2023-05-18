@@ -133,5 +133,5 @@ def draw_csv(file):
 
 if __name__ == "__main__":
     #write_csv("algo_prod_test.csv")
-    draw_csv("algo_prod_test.csv")
+    draw_csv("matrix_processor/algo_prod_test.csv")
     exit()
