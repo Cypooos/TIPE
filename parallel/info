@@ -1,0 +1,8 @@
+J'ai trouvé une erreur dans l'implémentation de https://scholarworks.calstate.edu/downloads/5h73pw49m : 
+Si le graphe est cyclique, on peut avoir une exclusion mutuelle...
+Perso j'utillise pthread_mutex_trylock pour éviter ce problème !
+
+TODO :
+3D graph (heatmap ?) for all algorithms with E,V and height = time
+Compare according to distance the time for MATRIX and MATRIX_MEM
+MATRIX_PAR ? MATRIX_PAR_MEM ?

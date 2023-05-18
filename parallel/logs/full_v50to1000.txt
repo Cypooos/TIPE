@@ -1,0 +1,4 @@
+ -- new benchmark `full_v50to1000` created -- 
+ -- new benchmark_fullG(10,100,1000,100,3) -- 
+ -- End of benchmark -- 
+ -- benchmark close -- 

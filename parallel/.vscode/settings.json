@@ -1,0 +1,21 @@
+{
+    "files.associations": {
+        "dirent.h": "c",
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "typeinfo": "c",
+        "benchmark.h": "c",
+        "time.h": "c",
+        "graphe.h": "c",
+        "bellman.h": "c",
+        "limits.h": "c",
+        "string.h": "c",
+        "classic.h": "c",
+        "algos.h": "c",
+        "matrix_algos.h": "c",
+        "pthread.h": "c",
+        "semaphore.h": "c",
+        "limits": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}

@@ -1,0 +1,4 @@
+ -- new benchmark `th1to5_bellmanF` created -- 
+ -- new benchmark_threads(3,1000,100000,1,10) -- 
+ -- End of benchmark -- 
+ -- benchmark close -- 

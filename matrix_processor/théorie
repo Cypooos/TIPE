@@ -1,0 +1,9 @@
+
+Description du graphique :
+ - En bleu le nombre de produit de mon algorithme dans mon processeur matriciel,
+ - En orange la version mémoisé,
+ - En vert le "gain" (nombre de produit que l'on a pas à faire):
+    => n'influence pas la complexité dans le pire des cas (retombe à 0 toute les puissances de 2),
+ - En rouge pointillé la complexité de l'algorithme, O(log²(n))
+ - En vert pointillé la complexité dans le meilleur des cas O(log(n))
+

@@ -1,0 +1,122 @@
+ -- new benchmark `heatmap_regular` created -- 
+ -- new benchmark_Vfixe(3,5,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,10,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,15,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,20,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,25,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,30,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,35,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,40,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,45,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,50,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,55,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,60,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,65,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,70,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,75,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,80,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,85,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,90,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,95,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,100,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,105,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,110,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,115,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,120,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,125,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,130,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,135,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,140,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,145,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,150,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,155,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,160,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,165,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,170,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,175,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,180,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,185,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,190,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,195,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,200,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,205,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,210,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,215,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,220,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,225,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,230,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,235,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,240,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,245,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,250,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,255,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,260,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,265,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,270,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,275,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,280,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,285,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,290,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,295,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- new benchmark_Vfixe(3,300,50,5000,1,50) -- 
+ -- End of benchmark -- 
+ -- benchmark close -- 
