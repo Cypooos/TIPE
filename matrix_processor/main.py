@@ -4,7 +4,7 @@ from distance_test import get_dist_max,get_dist_max_mem
 
 
 def test_arithmetics():
-	arithmetics = Interpretor("tests/arithmetics.asm")
+	arithmetics = Interpretor("algos/arithmetics.asm")
 	arithmetics.run([
 		Matrix.from_table([[1, 2], [3, 4]]),
 		Matrix.from_table([[5, 6], [7, 8]])
@@ -12,7 +12,7 @@ def test_arithmetics():
 
 def test_is_cycle():
 
-	get_cycle = Interpretor("tests/is_cycle.asm")
+	get_cycle = Interpretor("algos/is_cycle.asm")
 
 	tests_cycl = [
 		to_matrix("0 1\n1 0"),
@@ -48,7 +48,7 @@ def test_is_cycle():
 			exit()
 
 def test_distance():
-	distance = Interpretor("tests/distance.asm")
+	distance = Interpretor("algos/distance.asm")
 
 	tests = [
 		to_matrix("0 1"),
@@ -67,7 +67,7 @@ def test_distance():
 			print("Test #"+str(i)+" sucessful")
 
 def test_distance_mem():
-	distance = Interpretor("tests/distance_mem.asm")
+	distance = Interpretor("algos/distance_mem.asm")
 
 	tests = [
 		to_matrix("0 1"),
