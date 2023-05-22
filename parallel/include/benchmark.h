@@ -40,6 +40,7 @@ void benchmark_Efixe(int nb_times,int v_min,int v_max,int v_pad,int e_nb,int nb_
 void benchmark_threads(int nb_times,int v_nb,int e_nb,int th_min,int th_max);
 void benchmark_fullG(int nb_times,int v_min,int v_max,int v_pad,int nb_threads);
 void benchmark_Vfixe(int nb_times,int v_nb, int e_min,int e_max,int e_pad,int nb_threads);
+void benchmark_distance(int nb_times,int nb_v,int d_min, int d_max,int d_pad,int nb_threads);
 void close_benchmark();
 
 bool test_all_on(graphe_t* g,int nb_times, int nb_threads);

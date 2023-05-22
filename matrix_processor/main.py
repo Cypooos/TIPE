@@ -87,4 +87,4 @@ def test_distance_mem():
 
 
 if __name__ == "__main__":
-	test_distance_mem()
+	test_is_cycle()

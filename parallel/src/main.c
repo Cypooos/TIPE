@@ -8,6 +8,14 @@ int main() {
     srand(1);
 
     /*
+    srand(1);
+    TESTS = DIJSKTRA | BFS | MATRIX | MATRIX_MEM;
+    setup_benchmark("dist_1to100");
+    benchmark_distance(10,130,2,129,1,3);
+    close_benchmark();
+    */
+
+    /*
     TESTS = DIJSKTRA | BFS | BELLMAN | MATRIX | MATRIX_MEM;
     setup_benchmark("full_v50to1000");
     benchmark_fullG(10,50,1000,10,3);

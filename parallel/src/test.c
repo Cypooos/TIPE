@@ -7,19 +7,25 @@
 int main() {
     srand(1);
 
+    TESTS = DIJSKTRA | MATRIX | MATRIX_MEM;
+    setup_benchmark("dist_1to100");
+    benchmark_distance(10,130,2,129,1,3);
+    close_benchmark();
+
+
     /*
     TESTS = DIJSKTRA | BFS | BELLMAN | MATRIX | MATRIX_MEM;
     setup_benchmark("full_v50to1000");
     benchmark_fullG(3,50,1000,50,3);
     close_benchmark();
-    /**/
+    //
 
     TESTS = DIJSKTRA | BFS | BELLMAN | MATRIX | MATRIX_MEM;
     setup_benchmark("heatmap_regular");
     benchmark_heatmap(3,10,200,10,50,1000,10,1);
     close_benchmark();
 
-    //*
+    //
     TESTS = BELLMAN_PAR | BFS | BELLMAN | DIJSKTRA;
     setup_benchmark("th1to5_bellmanF_e100000_v1000");
     benchmark_threads(3,1000,100000,1,10);

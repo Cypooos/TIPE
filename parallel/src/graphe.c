@@ -110,6 +110,23 @@ graphe_t* make_new(int nb_v,int nb_e) {
     return g;
 }
 
+
+graphe_t* make_g_distance(int dist,int nb_v) {
+    graphe_t* g = malloc(sizeof(graphe_t));
+    g->nb_edge = dist;
+    g->nb_vert = nb_v;
+    edges_t* edges = malloc(dist*sizeof(edges_t));
+
+    for(int k=1;k<dist;k++) {
+        edges[k].i = k+1;
+        edges[k].j = k;
+    }
+    edges[0].i=0;
+    edges[0].j=dist;
+    g->edges = edges;
+    return g;
+}
+
 void free_graph(graphe_t* g) {
     free(g->edges);
     free(g);

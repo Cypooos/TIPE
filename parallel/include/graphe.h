@@ -31,6 +31,7 @@ void resize_graph(graphe_t* g);
 double get_deg_info(graphe_t* g);
 int gen_path(graphe_t* g,int start,int end,int length,int i_);
 void full_g(graphe_t* g);
+graphe_t* make_g_distance(int dist,int nb_v);
 
 void print_graphe(graphe_t* g);
 void free_graph(graphe_t* g);

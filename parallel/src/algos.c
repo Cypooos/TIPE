@@ -47,6 +47,7 @@ int bfs(graphe_arr* g) {
             if (distance[i]==iteration) {
                 for (int k=0;k<g->nb_connected[i];k++) {
                     if (g->edges[i][k].j==1) {
+                        free(distance);
                         return iteration+1;
                     } else if ((distance[g->edges[i][k].j]) == -1) {
                         distance[g->edges[i][k].j] = iteration+1;
@@ -56,6 +57,7 @@ int bfs(graphe_arr* g) {
         }
     }
 
+    free(distance);
     return -1;
 }
 

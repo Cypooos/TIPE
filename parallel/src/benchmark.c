@@ -90,6 +90,50 @@ void benchmark_heatmap(int nb_times,int v_min,int v_max,int v_pad,int e_min, int
     }
 }
 
+void benchmark_distance(int nb_times,int nb_v,int d_min, int d_max,int d_pad,int nb_threads) {
+    fprintf(f_log," -- new benchmark_distance(%d,%d,%d,%d,%d,%d) -- \n", nb_times, nb_v, d_min, d_max, d_pad, nb_threads);
+    fprintf(f_data,"# -- benchmark_distance(%d,%d,%d,%d,%d,%d) -- \n", nb_times, nb_v, d_min, d_max, d_pad, nb_threads);
+
+    // to remove outliar (first ones are non optimised by the os I'm guessing ?) :
+    {
+        for (int i=0;i<NB_PRETEST;i++) {
+
+            int r = rand();
+            srand(r);
+            //fprintf(f_log,"g = make_new(%d,%d)\n",v_nb,e_nb);
+            
+            graphe_t* g = make_g_distance(d_min,(nb_v==-1)?d_min+1:nb_v);
+            if (!test_all_on(g,-nb_times,nb_threads)){
+                fprintf(f_log,"In test_all_on(g,%d) (srand=%d):\n - make_g_distance(%d)\n",
+                nb_times,r,d_min);
+                exit(EXIT_FAILURE);
+            }
+            free_graph(g);
+        }
+    }
+    printf("Pretest completed\n");
+    for(int dist=d_min;dist<=d_max;dist+=d_pad) {
+        
+        if ((dist-d_min) % PRINT_PROGRES_ALL == 0) {
+            printf("Completed %d out of %d.\n",(dist-d_min)*nb_times/d_pad,d_max*nb_times/d_pad);
+        }
+        
+        int r = rand();
+        srand(r);
+        //fprintf(f_log,"g = make_new(%d,%d)\n",v_nb,e_nb);
+        graphe_t* g = make_g_distance(dist,(nb_v==-1)?dist+1:nb_v);
+        resize_graph(g);
+        if (!test_all_on(g,nb_times,nb_threads)){
+            fprintf(f_log,"In test_all_on(g,%d) (srand=%d):\n - make_g_distance(%d)\n", nb_times,r,d_min);
+            exit(EXIT_FAILURE);
+        }
+        free_graph(g);
+
+
+    }
+    fprintf(f_log," -- End of benchmark -- \n");
+    printf("End of benchmark.\n");
+}
 
 void benchmark_Efixe(int nb_times,int v_min,int v_max,int v_pad,int e_nb,int nb_threads) {
     fprintf(f_log," -- new benchmark_Efixe(%d,%d,%d,%d,%d,%d) -- \n",nb_times,v_min,v_max,v_pad,e_nb,nb_threads);

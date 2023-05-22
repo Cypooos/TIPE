@@ -3,7 +3,7 @@ import math
 
 from random import randint
 
-def get_dist_max(mat):
+def get_dist_min(mat):
     mat.data[1][1] = 1
     borne_inf = Matrix.IDENTITY(mat.x)
     borne_inf_counter = 1
@@ -27,7 +27,7 @@ def get_dist_max(mat):
             borne_inf = k
 
 
-def get_dist_max_mem(mat):
+def get_dist_min_mem(mat):
     mat.data[1][1] = 1
     borne_inf = Matrix.IDENTITY(mat.x)
     borne_inf_counter = 1
@@ -61,8 +61,8 @@ def get_dist_max_mem(mat):
             times_index += 1
 
 def test_both(mat):
-    dist,nb = get_dist_max(mat)
-    dist_mem,nb_mem = get_dist_max_mem(mat)
+    dist,nb = get_dist_min(mat)
+    dist_mem,nb_mem = get_dist_min_mem(mat)
     if dist != dist_mem:
         print("ERROR !!!")
     else:
@@ -89,8 +89,8 @@ def write_csv(file):
     fp.write("# nb_sommet, nb_arrettes, distance, nb_prod, nb_prod_dyn\n")
     for nb_s in range(2,513):
         mat = to_matrix("\n".join([str(x+1)+" " +str(x) for x in range(1,nb_s-1)]+["0 "+str(nb_s-1)]))
-        dist,nb = get_dist_max(mat)
-        dist_mem,nb_mem = get_dist_max_mem(mat)
+        dist,nb = get_dist_min(mat)
+        dist_mem,nb_mem = get_dist_min_mem(mat)
         if dist != dist_mem:
             print("ERROR !!!")
             exit()
@@ -114,10 +114,10 @@ def draw_csv(file):
 
     means = np.array([(k,v[0],v[1]) for k,v in means.items()],dtype=[("distance",int),("nb_prod",int),("nb_prod_dyn",int)])
     _fig, axis = plt.subplots()
-    axis.set_title("Comparaison du nombre de produits avec la mémoisation", loc='left')
+    axis.set_title("Comparaison du nombre de produits de MATRIX", loc='left')
 
-    axis.plot(means["distance"], means["nb_prod"], 'b-', lw=1,label="Distance classique")
-    axis.plot(means["distance"], means["nb_prod_dyn"], 'orange', lw=1,label="Distance mémoisé")
+    axis.plot(means["distance"], means["nb_prod"], 'b-', lw=1,label="MATRIX")
+    axis.plot(means["distance"], means["nb_prod_dyn"], 'orange', lw=1,label="MATRIX (mem)")
     
     axis.plot(means["distance"], means["nb_prod"]-means["nb_prod_dyn"], 'green', lw=1,label="Différence")
     axis.plot(means["distance"], np.power(np.log2(means["distance"]),2), 'r:', lw=1,label="Complexité max. $(\log_2(n)^2)$")
