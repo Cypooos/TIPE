@@ -1,4 +1,5 @@
-
+rust-multithreading/target/
+rust-multithreading/Cargo.lock
 .VSCodeCounter/
 out/*.o
 out/prog

@@ -3,7 +3,6 @@ from numpy import genfromtxt
 import matplotlib.pyplot as plt
 
 DTYPES = [("id",int),("v_nb",int),("e_nb",int),("deg",float),("algo_id",int),("nb_threads",int),("distance",int),("time",float)]
-# PATH = 'data/v50to500_e500.csv'
 PATH = 'data/full_v50to1000.csv'
 DIJKSTRA, BFS, BELLMAN, BELLMAN_PAR, MATRIX, MATRIX_MEM, MATRIX_PAR, MATRIX_PAR_MEM = 0,1,2,3,4,5,6,7
 
@@ -38,7 +37,7 @@ axis.plot(x_axis, bfs, 'black', lw=1,label="BFS")
 
 axis.set_ylabel("Temps d'éxecution (s)")
 plt.yscale('log')
-axis.set_xlabel("|V| pour |E|=500")
+axis.set_xlabel("|V| pour |E|=|V|²")
 axis.legend()
 axis.grid(True)
 plt.show()
